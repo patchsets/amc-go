@@ -1,0 +1,11 @@
+{
+  "checker": {
+    "max_workers": 2000,
+    "filter_giftcards": true,
+    "save_full_capture": false
+  },
+  "proxy_settings": {
+    "proxies_protocol": "http",
+    "import_proxies_from": "proxies.txt"
+  }
+}
